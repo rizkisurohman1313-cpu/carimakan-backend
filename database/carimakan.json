@@ -1,0 +1,192 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "maman",
+      "email": "rizkisurohman@gmail.com",
+      "password": "$2a$10$AccWZnXmM5qKDpmj3AXTteqtqDdCzQPDs9NAoiD2SxI.ws4hjpciy",
+      "phone": null,
+      "address": null,
+      "created_at": "2026-06-30T17:14:38.093Z"
+    }
+  ],
+  "favorites": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "meal_id": "53146",
+      "meal_name": "Locro",
+      "meal_image": "https://www.themealdb.com/images/media/meals/5sgsob1763196284.jpg"
+    }
+  ],
+  "orders": [
+    {
+      "id": 1,
+      "user_id": 1,
+      "meals": [
+        {
+          "mealId": "53254",
+          "name": "Ezme",
+          "price": 25000,
+          "quantity": 1
+        }
+      ],
+      "total_amount": 25000,
+      "status": "processing",
+      "payment_method": null,
+      "payment_status": "paid",
+      "shipping_address": "cendana",
+      "notes": "",
+      "created_at": "2026-06-30T17:14:56.947Z",
+      "updated_at": "2026-06-30T17:15:03.528Z"
+    },
+    {
+      "id": 2,
+      "user_id": 1,
+      "meals": [
+        {
+          "mealId": "53050",
+          "name": "Ayam Percik",
+          "price": 25000,
+          "quantity": 1
+        }
+      ],
+      "total_amount": 25000,
+      "status": "processing",
+      "payment_method": null,
+      "payment_status": "paid",
+      "shipping_address": "gang senen",
+      "notes": "",
+      "created_at": "2026-06-30T17:54:55.659Z",
+      "updated_at": "2026-06-30T17:55:02.687Z"
+    },
+    {
+      "id": 3,
+      "user_id": 1,
+      "meals": [
+        {
+          "mealId": "53443",
+          "name": "Satee",
+          "price": 25000,
+          "quantity": 1
+        }
+      ],
+      "total_amount": 25000,
+      "status": "processing",
+      "payment_method": null,
+      "payment_status": "paid",
+      "shipping_address": "gang senen",
+      "notes": "",
+      "created_at": "2026-06-30T17:55:57.134Z",
+      "updated_at": "2026-06-30T17:55:59.165Z"
+    },
+    {
+      "id": 4,
+      "user_id": 1,
+      "meals": [
+        {
+          "mealId": "53329",
+          "name": "Arepa pelua",
+          "price": 25000,
+          "quantity": 1
+        }
+      ],
+      "total_amount": 25000,
+      "status": "processing",
+      "payment_method": null,
+      "payment_status": "paid",
+      "shipping_address": "gg senen",
+      "notes": "",
+      "created_at": "2026-06-30T18:06:01.070Z",
+      "updated_at": "2026-06-30T18:06:01.095Z"
+    },
+    {
+      "id": 5,
+      "user_id": 1,
+      "meals": [
+        {
+          "mealId": "53281",
+          "name": "Algerian Kefta (Meatballs)",
+          "price": 25000,
+          "quantity": 1
+        }
+      ],
+      "total_amount": 25000,
+      "status": "processing",
+      "payment_method": null,
+      "payment_status": "paid",
+      "shipping_address": "serada",
+      "notes": "",
+      "created_at": "2026-06-30T18:10:18.048Z",
+      "updated_at": "2026-06-30T18:11:21.958Z"
+    }
+  ],
+  "payments": [
+    {
+      "id": 1,
+      "order_id": 1,
+      "user_id": 1,
+      "amount": 25000,
+      "currency": "IDR",
+      "method": "qris",
+      "transaction_id": null,
+      "status": "success",
+      "payment_details": null,
+      "created_at": "2026-06-30T17:14:56.956Z"
+    },
+    {
+      "id": 2,
+      "order_id": 2,
+      "user_id": 1,
+      "amount": 25000,
+      "currency": "IDR",
+      "method": "qris",
+      "transaction_id": null,
+      "status": "success",
+      "payment_details": null,
+      "created_at": "2026-06-30T17:54:55.675Z"
+    },
+    {
+      "id": 3,
+      "order_id": 3,
+      "user_id": 1,
+      "amount": 25000,
+      "currency": "IDR",
+      "method": "qris",
+      "transaction_id": null,
+      "status": "success",
+      "payment_details": null,
+      "created_at": "2026-06-30T17:55:57.148Z"
+    },
+    {
+      "id": 4,
+      "order_id": 4,
+      "user_id": 1,
+      "amount": 25000,
+      "currency": "IDR",
+      "method": "e_wallet",
+      "transaction_id": null,
+      "status": "success",
+      "payment_details": null,
+      "created_at": "2026-06-30T18:06:01.083Z"
+    },
+    {
+      "id": 5,
+      "order_id": 5,
+      "user_id": 1,
+      "amount": 25000,
+      "currency": "IDR",
+      "method": "qris",
+      "transaction_id": null,
+      "status": "success",
+      "payment_details": null,
+      "created_at": "2026-06-30T18:10:18.060Z"
+    }
+  ],
+  "_meta": {
+    "lastUserId": 1,
+    "lastOrderId": 5,
+    "lastPaymentId": 5,
+    "lastFavoriteId": 1
+  }
+}

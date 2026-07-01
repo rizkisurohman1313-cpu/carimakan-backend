@@ -8,6 +8,16 @@
       "phone": null,
       "address": null,
       "created_at": "2026-06-30T17:14:38.093Z"
+    },
+    {
+      "id": 2,
+      "name": "Administrator",
+      "email": "admin@gmail.com",
+      "password": ".KikfXlQy",
+      "phone": null,
+      "address": null,
+      "role": "admin",
+      "created_at": "2026-07-01T18:21:10.969Z"
     }
   ],
   "favorites": [
@@ -184,7 +194,7 @@
     }
   ],
   "_meta": {
-    "lastUserId": 1,
+    "lastUserId": 2,
     "lastOrderId": 5,
     "lastPaymentId": 5,
     "lastFavoriteId": 1

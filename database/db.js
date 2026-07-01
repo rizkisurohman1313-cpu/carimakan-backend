@@ -10,12 +10,23 @@ const DB_PATH = path.join(__dirname, 'carimakan.json');
 
 // Struktur data awal
 const defaultData = {
-  users: [],
+  users: [
+    {
+      id: 1,
+      name: 'Administrator',
+      email: 'admin@gmail.com',
+      password: '$2a$10$EW1YbgYLHdfPm5vBWsAL1eOYawiMuvyC4cA1BLYy64Il.KikfXlQy', // admin123
+      phone: null,
+      address: null,
+      role: 'admin',
+      created_at: new Date().toISOString()
+    }
+  ],
   favorites: [],
   orders: [],
   payments: [],
   _meta: {
-    lastUserId: 0,
+    lastUserId: 1,
     lastOrderId: 0,
     lastPaymentId: 0,
     lastFavoriteId: 0,

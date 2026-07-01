@@ -7,7 +7,7 @@ const getJwtExpiry = () => process.env.JWT_EXPIRY || '7d';
 
 export const register = async (req, res) => {
   try {
-    const { name, email, password, confirmPassword } = req.body;
+    const { name, email, password, confirmPassword, role } = req.body;
     const normalizedEmail = email?.trim().toLowerCase();
     const normalizedName = name?.trim();
 
@@ -38,6 +38,7 @@ export const register = async (req, res) => {
       password: hashedPassword,
       phone: null,
       address: null,
+      role: role || 'customer',
       created_at: new Date().toISOString(),
     };
 

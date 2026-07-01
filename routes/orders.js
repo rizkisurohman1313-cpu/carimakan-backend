@@ -2,15 +2,17 @@ import express from 'express';
 import {
   createOrder,
   getOrders,
+  getAllOrders,
   getOrderDetail,
   updateOrderStatus,
   cancelOrder,
 } from '../controllers/orderController.js';
-import { authMiddleware } from '../middleware/auth.js';
+import { authMiddleware, authorizeRole } from '../middleware/auth.js';
 
 const router = express.Router();
 
 // Protected routes
+router.get('/all', authMiddleware, authorizeRole(['admin', 'resto']), getAllOrders);
 router.post('/', authMiddleware, createOrder);
 router.get('/', authMiddleware, getOrders);
 router.get('/:orderId', authMiddleware, getOrderDetail);

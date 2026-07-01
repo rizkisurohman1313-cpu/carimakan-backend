@@ -47,6 +47,18 @@ export const getOrders = (req, res) => {
   }
 };
 
+export const getAllOrders = (req, res) => {
+  try {
+    // Return all orders sorted by date
+    const orders = db.data.orders
+      .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
+
+    res.json(orders);
+  } catch (error) {
+    res.status(500).json({ error: 'Gagal ambil semua orders' });
+  }
+};
+
 export const getOrderDetail = (req, res) => {
   try {
     const orderId = parseInt(req.params.orderId);

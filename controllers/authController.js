@@ -52,7 +52,7 @@ export const register = async (req, res) => {
     res.status(201).json({
       message: 'Registrasi berhasil',
       token,
-      user: { id: userId, name: normalizedName, email: normalizedEmail },
+      user: { id: userId, name: normalizedName, email: normalizedEmail, role: newUser.role },
     });
   } catch (error) {
     console.error('Register error:', error.message);
@@ -94,7 +94,7 @@ export const login = async (req, res) => {
     res.json({
       message: 'Login berhasil',
       token,
-      user: { id: user.id, name: user.name, email: user.email },
+      user: { id: user.id, name: user.name, email: user.email, role: user.role },
     });
   } catch (error) {
     console.error('Login error:', error.message);
